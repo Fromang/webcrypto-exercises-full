@@ -1,0 +1,27 @@
+
+
+.Box {
+    margin: 15px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    padding: 10px;
+
+
+    > .header {
+        h1 {
+            margin: 0px;
+            color: #73AD21;
+            border-bottom: 2px solid #73AD21;
+        }
+    }
+
+    > .content {
+        min-height: 100px;
+
+        > *:not(:last-child) {
+            border-bottom: 2px dashed #73AD21;
+        }
+    }
+}

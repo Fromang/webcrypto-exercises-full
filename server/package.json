@@ -1,0 +1,27 @@
+{
+  "name": "webcrypto-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever -w --watchDirectory ./src --minUptime 1000ms --spinSleepTime 1000ms ./src/app.js",
+    "debug": "forever -w -c 'node --inspect' --watchDirectory ./src --minUptime 1000ms --spinSleepTime 1000ms ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "forever": "^1.0.0"
+  },
+  "dependencies": {
+    "aes-gcm-stream": "^2.1.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "fortune-teller": "^0.1.2",
+    "morgan": "^1.9.1",
+    "pem-jwk": "^2.0.0"
+  }
+}

@@ -5,6 +5,7 @@ import DevTools from "mobx-react-devtools";
 import { storageFactory } from "../storage";
 
 import ExampleExercise from "./exercises/example";
+import RsaEncryptExercise from "./exercises/rsa-encrypt";
 
 
 class App extends React.Component {
@@ -14,7 +15,8 @@ class App extends React.Component {
 
         // List of exercises
         this.exercises = [
-            ExampleExercise
+            ExampleExercise,
+            RsaEncryptExercise
         ];
 
         this.createStore();

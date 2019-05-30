@@ -6,6 +6,9 @@ import { storageFactory } from "../storage";
 
 import ExampleExercise from "./exercises/example";
 import RsaEncryptExercise from "./exercises/rsa-encrypt";
+import AesCtrExercise from "./exercises/aes-ctr";
+import EcdsaSignExercise from "./exercises/ecdsa-sign";
+import EcdhExercise from "./exercises/ecdh";
 
 
 class App extends React.Component {
@@ -16,7 +19,10 @@ class App extends React.Component {
         // List of exercises
         this.exercises = [
             ExampleExercise,
-            RsaEncryptExercise
+            RsaEncryptExercise,
+            // AesCtrExercise,
+            // EcdsaSignExercise,
+            // EcdhExercise
         ];
 
         this.createStore();

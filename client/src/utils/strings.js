@@ -12,6 +12,21 @@ export function arrayBufferToHex(buffer) {
     ).join('');
 }
 
+/**
+ *
+ * @param {string} hex
+ * @returns {ArrayBuffer}
+ */
+export function hexToArrayBuffer(hex) {
+    var uintArray = new Uint8Array(hex.length / 2)
+
+    for (var i = 0; i < hex.length; i += 2) {
+        uintArray[i / 2] = parseInt(hex.substring(i, i + 2), 16)
+    }
+
+    return uintArray.buffer
+}
+
 export function stringToUint8Array(str) {
     const buf = new Uint8Array(str.length);
     Array.prototype.forEach.call(str, function (ch, i) {

@@ -20,7 +20,7 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "eckles": "^1.4.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "fortune-teller": "^0.1.2",
     "jwk-to-pem": "^2.0.1",
     "morgan": "^1.9.1",
